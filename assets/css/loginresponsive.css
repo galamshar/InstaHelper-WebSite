@@ -1,0 +1,63 @@
+@media (max-width: 992px) {
+    .container{
+        min-height: 700px;
+    }
+    .form-container {
+        height: 60%;
+    }
+    .sign-in-container {
+        width: 100%;
+    }
+    .container.right-panel-active .sign-in-container {
+        transform: translateY(65%);
+    }
+    .sign-up-container {
+        width: 100%;
+    }
+    .container.right-panel-active .sign-up-container {
+        transform: translateY(65%);
+    }
+    .overlay-container {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        top: auto;
+        width: 100%;
+        height: 40%;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+    .container.right-panel-active .overlay-container{
+        transform: translateY(-150%);
+    }
+    .overlay-panel {
+        height: 100%;
+        width: 50%;
+    }
+    .overlay-left {
+        transform: translateY(-20%);
+    }
+    .container.right-panel-active .overlay-left {
+        transform: translateY(0);
+    }
+    
+    .overlay-right {
+        right: 0;
+        transform: translateY(0);
+    }
+    
+    .container.right-panel-active .overlay-right {
+        transform: translateY(100%);  
+    }
+    footer{
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 576px) {
+
+}

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InstaHelper</title>
+
+    <!--Including styles-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+  <!--Preloader area-->
+  <div id="preloader" class="loader-wrapper">
+    <div id="loader"></div>
+  </div>
+  <div class="mainblog">
+    <!--Header area-->
+    <header id="header">
+        <div class="container">
+            <div class="d-flex flex-row justify-content-between align-items-center" id="headerm">
+                <div class="logo">
+                    <a href="index.php">
+                        <img src="assets/img/logo2.png" alt="InstaHelper" width="170px" height="30px">
+                    </a>
+                </div>
+                <div id="menutog" onclick="callmenu()">
+                  <i class="fas fa-bars" style="color: white;">
+                  </i>
+                </div>
+                <div class="links" id="links">
+                    <ul id = "list" class="list-inline">
+                        <li class="list-inline-item">
+                            <a class="scroll" href="#features">Features</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="scroll" href="#faq">FAQ</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="blog.html">Blog</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="scroll" href="#buy">Buy</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="scroll" href="#download">Download</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="scroll" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>    
+        </div>
+    </header>
+    <!--Slider part-->
+    <section class="blogslider">
+        <div class="container">
+            <div class="blogsmain">
+                <h2>Blog Page</h2>
+                <ul>
+                    <li id="navg">
+                        <a href="index.php">Home</a>
+                    </li>
+                    <li id="navg">
+                        <a href="#blogs">Blog</a>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    </section>
+  </div>
+  <div class="blogcontent">
+      <div class="container">
+          <div class="blogblocks">
+              <div class="sblog">
+                <div class="singleblog">
+                    <div class="blogimg">
+                        <a href="#">
+                            <img src="assets/img/blog/blog.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="blogcon">
+                        <ul>
+                            <li>By <a href="#">Ayat Akylbekov</a></li>
+                            <li><a href="#">21.05.2020</a></li>
+                        </ul>
+                        <!--Blog title and text-->
+                        <h3>
+                            <a href="#">What include new update?</a>
+                        </h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta exercitationem officia, culpa nesciunt a, odit nobis, iure reprehenderit quaerat veniam autem expedita. Possimus molestiae, aliquid aperiamm.</p>
+                        <a href="#">Read more</a>
+                    </div>
+                </div>
+              </div>
+              <div class="sblog">
+                <div class="singleblog">
+                    <div class="blogimg">
+                        <a href="#">
+                            <img src="assets/img/blog/blog-2.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="blogcon">
+                        <ul>
+                            <li>By <a href="#">Michael Smatulaev</a></li>
+                            <li><a href="#">21.03.2020</a></li>
+                        </ul>
+                        <!--Blog title and text-->
+                        <h3>
+                            <a href="#">New features,global changes!</a>
+                        </h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta exercitationem officia, culpa nesciunt a, odit nobis, iure reprehenderit quaerat veniam autem expedita. Possimus molestiae, aliquid aperiamm.</p>
+                        <a href="#">Read more</a>
+                    </div>
+                </div>
+              </div>
+              <div class="sblog">
+                <div class="singleblog">
+                    <div class="blogimg">
+                        <a href="#">
+                            <img src="assets/img/blog/blog-3.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="blogcon">
+                        <ul>
+                            <li>By <a href="#">Ayat Akylbekov</a></li>
+                            <li><a href="#">12.03.2020</a></li>
+                        </ul>
+                        <!--Blog title and text-->
+                        <h3>
+                            <a href="#"> New changes in our terms</a>
+                        </h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta exercitationem officia, culpa nesciunt a, odit nobis, iure reprehenderit quaerat veniam autem expedita. Possimus molestiae, aliquid aperiamm.</p>
+                        <a href="#">Read more</a>
+                    </div>
+                </div>
+              </div>
+              <div class="sblog">
+                <div class="singleblog">
+                    <div class="blogimg">
+                        <a href="#">
+                            <img src="assets/img/blog/blog-4.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="blogcon">
+                        <ul>
+                            <li>By <a href="#">Ayat Akylbekov</a></li>
+                            <li><a href="#">01.01.2020</a></li>
+                        </ul>
+                        <!--Blog title and text-->
+                        <h3>
+                            <a href="#">Happy New Year!</a>
+                        </h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta exercitationem officia, culpa nesciunt a, odit nobis, iure reprehenderit quaerat veniam autem expedita. Possimus molestiae, aliquid aperiamm.</p>
+                        <a href="#">Read more</a>
+                    </div>
+                </div>
+              </div>
+              <div class="sblog">
+                <div class="singleblog">
+                    <div class="blogimg">
+                        <a href="#">
+                            <img src="assets/img/blog/blog-5.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="blogcon">
+                        <ul>
+                            <li>By <a href="#">Madiyar Yermekov</a></li>
+                            <li><a href="#">12.12.2019</a></li>
+                        </ul>
+                        <!--Blog title and text-->
+                        <h3>
+                            <a href="#">New news in our company</a>
+                        </h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta exercitationem officia, culpa nesciunt a, odit nobis, iure reprehenderit quaerat veniam autem expedita. Possimus molestiae, aliquid aperiamm.</p>
+                        <a href="#">Read more</a>
+                    </div>
+                </div>
+              </div>
+              <div class="sblog">
+                <div class="singleblog">
+                    <div class="blogimg">
+                        <a href="#">
+                            <img src="assets/img/blog/blog-6.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="blogcon">
+                        <ul>
+                            <li>By <a href="#">Galymzhan Myrzagaliyev</a></li>
+                            <li><a href="#">11.10.2019</a></li>
+                        </ul>
+                        <!--Blog title and text-->
+                        <h3>
+                            <a href="#"> New privacy terms.</a>
+                        </h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta exercitationem officia, culpa nesciunt a, odit nobis, iure reprehenderit quaerat veniam autem expedita. Possimus molestiae, aliquid aperiamm.</p>
+                        <a href="#">Read more</a>
+                    </div>
+                </div>
+              </div>
+          </div>
+  </div>
+    
+  </div>
+  <div class="blogfooter">
+      <div class="container">
+          <div class="footelement">
+              <div class="footerinfo">
+                <img src="assets/img/logo.png" alt="" width="200px">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolorem optio maiores voluptatum numquam delectus totam.</p>
+                <ul>
+                    <li>
+                      <a href="#">Terms & Conditions</a>
+                    </li>
+                    <li>
+                        <a href="#">Refund program</a>
+                    </li>
+                    <li>
+                        <a href="#">Privacy policy</a>
+                    </li>
+                    <li>
+                        <a href="#">Data policy</a>
+                    </li>
+                </ul>
+                <p>Made by galamshar</p>
+              </div>
+          </div>
+      </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="assets/js/plugins.min.js"></script>
+  <script src="assets/js/jquery-3.3.1.min.js"></script>
+  <script src="assets/js/home/script.js"></script>
+</body>
