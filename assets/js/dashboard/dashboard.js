@@ -21,10 +21,10 @@ function isLogged() {
 
 function activate(value) {
     if (value != activated) {
-        $('#'+value).addClass("active");
-        $('#'+activated).removeClass("active");
+        $('#' + value).addClass("active");
+        $('#' + activated).removeClass("active");
         activated = value;
-        $.get(value+'.php',function(data){
+        $.get(value + '.php', function (data) {
             $('#maincontent').html(data);
         });
     }
@@ -37,7 +37,7 @@ function change() {
         $('#user-email').text(globalResponse.email);
         $('#user-role').text(globalResponse.role);
         $('#sub-type').text(globalResponse.subtype);
-    } else if(activated == "upgrade"){
+    } else if (activated == "upgrade") {
         $(".buyed").hide();
         if (globalResponse.subtype == "Basic") {
             $('#basic').hide();
@@ -78,4 +78,19 @@ function changePwd() {
             }
         })
     }
+}
+
+function logout() {
+    $.ajax({
+        type: "GET",
+        url: "../actions/user/logout.php",
+        dataType: "json",
+        success: function (response) {
+            if (response.success == 'true'){
+                window.location.href = '../login/index.php'
+            } else {
+                logout();
+            }
+        }
+    })
 }

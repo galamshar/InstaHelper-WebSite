@@ -18,7 +18,7 @@ class userController
 
     public function logOut()
     {
-        if ($this->model->is_logged_in()['success'] == 'true') {
+        if ($this->model->is_logged_in()) {
             $this->model->logout();
             return array('success' => 'true');
         } else {

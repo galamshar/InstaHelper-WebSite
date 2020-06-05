@@ -366,7 +366,7 @@ require_once ('feedback.php');
                 <h3 style="padding-bottom: 1rem;padding-top: 1rem;">PRO</h3>
                 <h1 style="padding-bottom: 1rem;"><small>$</small>29</h1>
                 <ul>
-                    <li>Basic</li>
+                    <li>All features of basic plan</li>
                     <li>3 accounts available to link</li>
                     <li>Unlimited threads</li>
                     <li>Data encryption</li>

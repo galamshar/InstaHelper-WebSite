@@ -242,6 +242,20 @@ section {
     line-height: 1.4rem;
 }
 
+@media (max-width: 1024px) {
+    body{
+        display: block;
+    }
+    .container{
+        height: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .buy .blocks{
+        flex-direction: column;
+    }
+}
+
 @media (max-width: 880px) {
     .user {
         grid-template-columns: 1fr;
@@ -305,6 +319,20 @@ section {
 
     .settings span {
         display: none;
+    }
+}
+
+@media (max-width: 540px) {
+    picture img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 360px) {
+    picture img {
+        width: 40px;
+        height: 40px;
     }
 }
 
@@ -374,7 +402,7 @@ section {
     padding: 15px 0px;
 }
 
-#changepwd{
+#changepwd {
     background-color: #FFFFFF;
     display: flex;
     align-items: center;
@@ -394,7 +422,7 @@ section {
     width: 100%;
 }
 
-.general-block button{
+.general-block button {
     border-radius: 20px;
     border: 1px solid #FF4B2B;
     background-color: #FF4B2B;
