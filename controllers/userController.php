@@ -60,4 +60,20 @@ class userController
             return $checkPassword;
         }
     }
+
+    public function changeSubscription($subscriptionName){
+        if ($subscriptionName == "Basic" || $subscriptionName == "Pro"){
+            if ($subscriptionName != $this->model->getInfo()->getSubType()){
+                if ($subscriptionName == "Basic"){
+                   return $this->model->changeSubscription(1);
+                } elseif ($subscriptionName == "Pro"){
+                   return $this->model->changeSubscription(2);
+                }
+            } else {
+                return array('success' => 'false', 'error' => 'User already has this subscription type');
+            }
+        } else {
+            return array('success' => 'false', 'error' => 'Incorrect subscription type');
+        }
+    }
 }

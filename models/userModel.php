@@ -56,9 +56,14 @@ class userModel
             $STH = $this->dbconn->prepare('UPDATE users SET password = :password WHERE username = :username');
             $STH->execute(array('password' => $password, 'username' => $this->currentUser->getUsername()));
             return array('success' => 'true', 'error' => 'null');
-        }
-        else {
+        } else {
             return array('success' => 'false', 'error' => 'Incorrect password!');
         }
     }
+
+    public function changeSubscription($subId){
+        $STH = $this->dbconn->prepare('UPDATE users SET subscription_id = :subId');
+        $STH->execute(array('subId' => $subId));
+        return array('success' => 'true', 'error' => 'null');
+}
 }

@@ -243,15 +243,17 @@ section {
 }
 
 @media (max-width: 1024px) {
-    body{
+    body {
         display: block;
     }
-    .container{
+
+    .container {
         height: 100%;
         padding: 0;
         margin: 0;
     }
-    .buy .blocks{
+
+    .buy .blocks {
         flex-direction: column;
     }
 }
@@ -433,4 +435,10 @@ section {
     letter-spacing: 1px;
     text-transform: uppercase;
     transition: transform 80ms ease-in;
+}
+
+button,
+button:active,
+button:focus {
+    outline: none;
 }
